@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ne" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MT Security Service Preparation - Nepal Army, Nepal Police and Armed Police Force Online Exam Preparation Platform.">
+    <title>MT Security Service Preparation | नेपाल आर्मी, नेपाल प्रहरी र सशस्त्र प्रहरी परीक्षा तयारी</title>
+    
+    <!-- Google Fonts for Nepali Devanagari & Latin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/flag-of-nepal.webp" type="image/webp">
+</head>
+<body>
+
+    <!-- SITE HEADER & NAVIGATION -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar" aria-label="Main Navigation">
+                <!-- Brand / Logo Area -->
+                <a href="#home" class="brand-logo-area">
+                    <div class="brand-icon-box">🇳🇵</div>
+                    <div class="brand-text-box">
+                        <span class="brand-title">MT Security Prep</span>
+                        <span class="brand-tagline">Service Examination Portal</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links List -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+
+                    <!-- Syllabus Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#syllabus" class="nav-link dropdown-toggle" aria-haspopup="true">
+                            Syllabus <span class="arrow-down">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#syllabus/Nepal Army" class="dropdown-item">🇳🇵 Nepal Army (सैनिक)</a></li>
+                            <li><a href="#syllabus/Nepal Police" class="dropdown-item">👮 Nepal Police (प्रहरी जवान)</a></li>
+                            <li><a href="#syllabus/Armed Police Force" class="dropdown-item">🛡️ Armed Police Force (सशस्त्र)</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Topic Wise Notes Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#notes" class="nav-link dropdown-toggle" aria-haspopup="true">
+                            Topic Wise Notes <span class="arrow-down">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#notes/Nepal Army" class="dropdown-item">🇳🇵 Nepal Army Notes</a></li>
+                            <li><a href="#notes/Nepal Police" class="dropdown-item">👮 Nepal Police Notes</a></li>
+                            <li><a href="#notes/Armed Police Force" class="dropdown-item">🛡️ APF Notes</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Topic Wise Exam Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#topic-exam-setup" class="nav-link dropdown-toggle" aria-haspopup="true">
+                            Topic Wise Exam <span class="arrow-down">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#topic-exam-setup/Nepal Army" class="dropdown-item">Nepal Army Practice</a></li>
+                            <li><a href="#topic-exam-setup/Nepal Police" class="dropdown-item">Nepal Police Practice</a></li>
+                            <li><a href="#topic-exam-setup/Armed Police Force" class="dropdown-item">Armed Police Force Practice</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Model Set Exam Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a href="#model-exam-setup" class="nav-link dropdown-toggle" aria-haspopup="true">
+                            Model Set Exam <span class="arrow-down">▼</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#model-exam-setup/Nepal Army" class="dropdown-item">🇳🇵 Army Model Set (50 Qs)</a></li>
+                            <li><a href="#model-exam-setup/Nepal Police" class="dropdown-item">👮 Police Model Set (40 Qs)</a></li>
+                            <li><a href="#model-exam-setup/Armed Police Force" class="dropdown-item">🛡️ APF Model Set (15 Qs)</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#pdf-materials" class="nav-link">PDF Downloads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#dashboard" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#leaderboard" class="nav-link">Leaderboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#admin" class="nav-link">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Header Right Action Tools -->
+                <div class="header-actions">
+                    <!-- Light / Dark Mode Toggle Button -->
+                    <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                        <span id="theme-toggle-icon">🌙</span>
+                        <span id="theme-toggle-text">Dark Mode</span>
+                    </button>
+
+                    <!-- Mobile Hamburger Button -->
+                    <button class="hamburger-btn" id="hamburger-btn" aria-label="Open mobile navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Backdrop -->
+    <div class="nav-backdrop" id="nav-backdrop"></div>
+
+    <!-- MAIN DYNAMIC CONTENT CONTAINER (SPA) -->
+    <main id="main-content" role="main">
+        <!-- Rendered dynamically by js/app.js -->
+    </main>
+
+    <!-- GLOBAL CONFIRMATION / NOTIFICATION MODAL -->
+    <div id="confirm-modal" class="modal-overlay" style="display: none;" role="dialog" aria-modal="true">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="confirm-modal-title">Confirmation</h3>
+            </div>
+            <div class="modal-body">
+                <p id="confirm-modal-message" style="white-space: pre-line;">Are you sure you want to proceed?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" id="confirm-modal-cancel">Cancel</button>
+                <button type="button" class="btn btn-primary btn-sm" id="confirm-modal-ok">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" aria-live="polite"></div>
+
+    <!-- SITE FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- 1. Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li>
+                            <a href="https://psc.gov.np/" target="_blank" rel="noopener noreferrer">
+                                🏛️ Public Service Commission
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.nepalarmy.mil.np/" target="_blank" rel="noopener noreferrer">
+                                🇳🇵 Nepal Army
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.nepalpolice.gov.np/" target="_blank" rel="noopener noreferrer">
+                                👮 Nepal Police
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.apf.gov.np/" target="_blank" rel="noopener noreferrer">
+                                🛡️ Armed Police Force
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 2. Services -->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#topic-exam-setup">Online Exam Practice</a></li>
+                        <li><a href="#model-exam-setup">Model Set Examinations</a></li>
+                        <li><a href="#syllabus">Syllabus & Physical Guidelines</a></li>
+                        <li><a href="#pdf-materials">📄 PDF Downloads & Syllabus</a></li>
+                        <li>
+                            <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer">
+                                💻 Zoom Online Classes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3. Contact -->
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>📍 Address: Birendranagar, Surkhet</p>
+                    <p>📱 Phone: <a href="tel:9866655255">9866655255</a></p>
+                    <p>👤 Facebook: <strong>PB Bishwakrma</strong></p>
+                    <p class="text-muted">Karnali Province, Nepal</p>
+                </div>
+
+                <!-- 4. Platform Overview -->
+                <div class="footer-col">
+                    <h4>About MT Prep</h4>
+                    <p>
+                        A dedicated preparation portal for candidates of Nepal Army, Nepal Police, and Armed Police Force.
+                    </p>
+                    <div class="mt-3">
+                        <a href="#admin" class="badge">🛠️ Admin Access</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2026 MT Security Service Preparation. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT MODULES (Loaded in sequence) -->
+    <script src="js/storage.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/exam.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
